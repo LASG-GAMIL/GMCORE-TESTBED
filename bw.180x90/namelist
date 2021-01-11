@@ -9,16 +9,17 @@
   test_case           = 'baroclinic_wave'
   run_days            = 30
   time_scheme         = 'pc2'
-  dt_in_seconds       = 100
+  dt_in_seconds       = 120
   pv_scheme           = 1
   case_name           = 'bw.180x90.l26'
   history_interval    = '1 days'
-! reduce_factors      = 10 9 4 3 3 2 2
-  reduce_factors      = 6 4 4 2
+  reduce_factors      = 9 4 3 2 2 2 2
   reduce_pv_directly  = .true.
   do_reduce_ke        = .true.
   use_div_damp        = .true.
   use_vor_damp        = .true.
-  vor_damp_coef2      = 0.008
-  vor_damp_lat0       = 80
+  vor_damp_coef2      = 0.005
+  vor_damp_lat0       = 60
+  use_smag_damp       = .true.
+  smag_damp_coef      = 0.2
 /
