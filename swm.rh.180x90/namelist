@@ -5,11 +5,14 @@
   num_proc_lat        = 30
   test_case           = 'rossby_haurwitz_wave'
   run_days            = 100
-  dt_in_seconds       = 100
+  time_scheme         = 'pc2'
+  dt_in_seconds       = 80
   pv_scheme           = 1
   case_name           = 'swm.rh.180x90'
   history_interval    = '1 days'
-  reduce_factors      = 9 6 4 2
-  use_polar_damp      = .true.
-  polar_damp_order    = 4
+  reduce_factors      = 4 2 2
+  use_vor_damp        = .true.
+  vor_damp_coef2      = 0.0005
+  vor_damp_lat0       = 85
+  vor_damp_decay      = 0.1
 /
