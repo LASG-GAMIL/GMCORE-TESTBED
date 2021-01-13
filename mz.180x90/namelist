@@ -13,12 +13,15 @@
   pv_scheme           = 1
   case_name           = 'mz.180x90.l26'
   history_interval    = '1 days'
-  reduce_factors      = 10 9 4 3 3 2 2
+  reduce_factors      = 9 4 3 2 2 2 2
   reduce_pv_directly  = .true.
   do_reduce_ke        = .true.
   use_div_damp        = .true.
-  div_damp_coef2      = 0.008
   use_vor_damp        = .true.
-  vor_damp_lat0       = 70
-  vor_damp_decay      = 0.1
+  vor_damp_coef2      = 0.005
+  vor_damp_lat0       = 60
+  use_smag_damp       = .true.
+  smag_damp_coef      = 0.2
+  use_polar_damp      = .true.
+  polar_damp_lat0     = 85
 /
