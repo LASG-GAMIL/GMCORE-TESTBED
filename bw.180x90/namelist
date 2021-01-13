@@ -9,7 +9,7 @@
   test_case           = 'baroclinic_wave'
   run_days            = 30
   time_scheme         = 'pc2'
-  dt_in_seconds       = 120
+  dt_in_seconds       = 180
   pv_scheme           = 1
   case_name           = 'bw.180x90.l26'
   history_interval    = '1 days'
@@ -22,4 +22,6 @@
   vor_damp_lat0       = 60
   use_smag_damp       = .true.
   smag_damp_coef      = 0.2
+  use_polar_damp      = .true.
+  polar_damp_lat0     = 85
 /
