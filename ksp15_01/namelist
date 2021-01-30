@@ -1,0 +1,33 @@
+&gmcore_control
+  num_lon             = 360
+  num_lat             = 161
+  num_lev             = 64
+  coarse_pole_mul     = 3
+  coarse_pole_decay   = 100
+  num_proc_lon        = 1
+  num_proc_lat        = 60
+  nonhydrostatic      = .true.
+  vert_coord_scheme   = 'hybrid'
+  vert_coord_template = 'wrf_l64'
+  ptop                = 32.81e2
+  test_case           = 'ksp15_01'
+  run_hours           = 2
+  time_scheme         = 'pc2'
+  dt_in_seconds       = 0.3
+  pv_scheme           = 1
+  ke_scheme           = 2
+  upwind_order        = 3
+  upwind_wgt_pt       = 0.25
+  case_name           = 'ksp15_01'
+  history_interval    = '10 minutes'
+  print_interval      = '1 minutes'
+  output_debug        = .true.
+  reduce_factors      = 8 8 4 4 2
+  reduce_pv_directly  = .true.
+  do_reduce_ke        = .true.
+  use_div_damp        = .true.
+  use_vor_damp        = .true.
+  vor_damp_coef2      = 0.005
+  vor_damp_bkg_coef   = 0
+  vor_damp_lat0       = 80
+/
