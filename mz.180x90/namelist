@@ -16,7 +16,7 @@
   upwind_order        = 3
   vert_upwind_order   = 3
   upwind_wgt_pt       = 0.25
-  case_name           = 'mz.04.180x90.wrf_l26'
+  case_name           = 'mz.180x90.wrf_l26'
   history_interval    = '1 days'
   output_h0_new_file  = 'one_file'
   reduce_factors      = 9 4 4 3 3 2 2
