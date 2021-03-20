@@ -1,0 +1,35 @@
+&gmcore_control
+  num_lon             = 320
+  num_lat             = 161
+  num_lev             = 10
+  nonhydrostatic      = .true.
+  vert_coord_scheme   = 'hybrid'
+  vert_coord_template = 'dcmip31_l10'
+  test_case           = 'dcmip31'
+  run_hours           = 1
+  time_scheme         = 'wrfrk3'
+  dt_in_seconds       = 0.6
+  pv_scheme           = 2
+  upwind_order_pv     = 3
+  upwind_wgt_pv       = 1
+  ke_scheme           = 2
+  upwind_order        = 3
+  vert_upwind_order   = 3
+  upwind_wgt_pt       = 1
+  implicit_w_wgt      = 0.5
+  rayleigh_damp_w_coef= 0
+  case_name           = 'dcmip31'
+  history_interval    = '10 minutes'
+  print_interval      = '1 minutes'
+  output_debug        = .true.
+  output_h0_new_file  = 'one_file'
+  reduce_factors      = 16 8 5 5 4 4 2 2 2 2
+  reduce_pv_directly  = .true.
+  do_reduce_ke        = .true.
+  use_vor_damp        = .true.
+  vor_damp_coef2      = 0.001
+  vor_damp_lat0       = 80
+  vor_damp_imp_lat0   = 80
+  use_polar_damp      = .true.
+  polar_damp_lat0     = 70
+/
