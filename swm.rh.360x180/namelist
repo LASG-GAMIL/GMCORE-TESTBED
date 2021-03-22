@@ -1,18 +1,18 @@
 &gmcore_control
-  num_lon             = 180
-  num_lat             = 90
+  num_lon             = 360
+  num_lat             = 180
   test_case           = 'rossby_haurwitz_wave'
   run_days            = 100
   time_scheme         = 'pc2'
   split_scheme        = 'csp2'
   fast_cycles         = 5
-  dt_in_seconds       = 600
+  dt_in_seconds       = 300
   pv_scheme           = 2
   upwind_order_pv     = 3
   upwind_wgt_pv       = 0.5
-  case_name           = 'swm.rh.180x90'
+  case_name           = 'swm.rh.360x180'
   history_interval    = '1 days'
   output_h0_new_file  = 'one_file'
-  reduce_factors      = 4 4 2 2 2
+  reduce_factors      = 18 9 6 6 4 4 3 3 2 2 2
   reduce_pv_directly  = .false.
 /
