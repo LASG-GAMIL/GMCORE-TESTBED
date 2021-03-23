@@ -1,0 +1,43 @@
+&gmcore_control
+  num_lon             = 2400
+  num_lat             = 800
+  num_lev             = 32
+  coarse_pole_mul     = 5
+  coarse_pole_decay   = 30
+  vert_coord_scheme   = 'hybrid'
+  vert_coord_template = 'wrf_l32'
+  run_days            = 30
+  time_scheme         = 'wrfrk3'
+  dt_in_seconds       = 20
+  ke_scheme           = 2
+  pv_scheme           = 2
+  upwind_order_pv     = 3
+  upwind_wgt_pv       = 1
+  upwind_order        = 3
+  vert_upwind_order   = 3
+  upwind_wgt_pt       = 0.25
+  initial_file        = '...'
+  case_name           = 'ic.2400x800.wrf_l32'
+  history_interval    = '1 days'
+  output_h0_new_file  = 'one_file'
+  reduce_factors      = 40 40 25 20 15 12 12 10  8  8
+                         8  6  6  6  5  5  5  4  4  4
+                         4  3  3  3  3  2  2  2  2  2
+                         2  2  2  2
+  reduce_pv_directly  = .true.
+  use_div_damp        = .true.
+  div_damp_polar      = 1
+  div_damp_imp_lat0   = 70
+  use_vor_damp        = .true.
+  vor_damp_coef2      = 0.008
+  vor_damp_bkg_coef   = 0
+  vor_damp_lat0       = 60
+  vor_damp_decay      = 0.05
+  vor_damp_imp_lat0   = 80
+  use_polar_damp      = .true.
+  polar_damp_lat0     = 70
+  polar_damp_phs      = .true.
+  polar_damp_phs_lat0 = 85
+  use_smag_damp       = .true.
+  smag_damp_coef      = 0.2
+/
