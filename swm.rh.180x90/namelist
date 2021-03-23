@@ -6,13 +6,14 @@
   test_case           = 'rossby_haurwitz_wave'
   run_days            = 100
   time_scheme         = 'pc2'
-  dt_in_seconds       = 80
-  pv_scheme           = 1
+  split_scheme        = 'csp2'
+  fast_cycles         = 5
+  dt_in_seconds       = 600
+  pv_scheme           = 2
+  upwind_order_pv     = 3
+  upwind_wgt_pv       = 0.5
   case_name           = 'swm.rh.180x90'
   history_interval    = '1 days'
-  reduce_factors      = 4 2 2
-  use_vor_damp        = .true.
-  vor_damp_coef2      = 0.0005
-  vor_damp_lat0       = 85
-  vor_damp_decay      = 0.1
+  reduce_factors      = 4 4 2 2 2
+  reduce_pv_directly  = .false.
 /
